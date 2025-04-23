@@ -1,5 +1,5 @@
 
-# TravelWorld 🌍
+# Berleen Safaris 🌍
 
 A Fullstack Tours & Travels Web App Using MERN Stack 💫
 
@@ -16,7 +16,7 @@ A Fullstack Tours & Travels Web App Using MERN Stack 💫
 
 ## Authors
 
-- [@Shuence](https://www.github.com/shuence) 💫
+- [@Peter](https://github.com/p3t3rkamau) 💫
 
 ## Badges
 
@@ -24,7 +24,7 @@ A Fullstack Tours & Travels Web App Using MERN Stack 💫
 
 ## Live Preview
 
-[TravelWorld 🌍](https://travelworldtours.netlify.app/)
+[Berleen Safaris 🌍](https://berleensafaris.netlify.app/)
 
 ![image](https://github.com/shuence/FitClub/assets/65482186/4c863ee9-2e02-4e98-95c0-e122cf91320e)
 
@@ -101,11 +101,11 @@ Overall, this project marked a significant milestone in my journey as a full-sta
 - Integrate geolocation services for location-based tour suggestions.
 - Implement a user dashboard for managing and tracking bookings.
 
-# Hi, I'm Shuence! 👋
+# Hi, I'm Peter! 👋
 
 ## 🚀 About Me
 
-I'm Shubham Pitekar, a passionate full-stack developer with expertise in ReactJS,NextJS, NodeJs,ExpressJS and MongoDb. I love turning ideas into reality on the web. I thrive on challenges and continuously seek opportunities to push my boundaries. Let's create impactful projects together!
+I'm a passionate full-stack developer with expertise in ReactJS,NextJS, NodeJs,ExpressJS and MongoDb. I love turning ideas into reality on the web. I thrive on challenges and continuously seek opportunities to push my boundaries. Let's create impactful projects together!
 
 ## 🛠 Skills
 
@@ -113,4 +113,3 @@ JavaScript, HTML, CSS, React, Bootstrap, Node.js, Express, MongoDB.
 
 ## Happy coding 💯
 
-Made with love from [Shuence](https://shuence.netlify.app) ❤️
