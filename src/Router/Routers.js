@@ -14,7 +14,12 @@ import Gallery from '../Pages/Gallery';
 import PageNotFound from '../Pages/PageNotFound';
 import Blogs from '../Pages/Blogs';
 import BlogDetails from '../Pages/BlogDetails';
+import Kenya from '../Pages/Kenya';
+import Uganda from '../Pages/Uganda';
+import Rwanda from '../Pages/rwanda';
+import Tanzania from '../Pages/tanzania.jsx';
 import ScrollToTop from '../utils/scrolltoTop';
+import Destinations from '../Pages/Destinations';
 
 const Router = () => {
   return (
@@ -22,6 +27,11 @@ const Router = () => {
     <ScrollToTop />
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/Destinations" element={<Destinations />} />
+      <Route path="/Destinations/kenya" element={<Kenya />} />
+      <Route path="/Destinations/rwanda" element={<Rwanda />} />
+      <Route path="/Destinations/tanzania" element={<Tanzania />} />
+      <Route path="/Destinations/uganda" element={<Uganda />} />
       <Route path="/about" element={<About />} />
       <Route path="/tours" element={<Tours />} />
       <Route path="/tours/:id" element={<TourDetails />} />
