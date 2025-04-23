@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useContext, useState } from "react";
 import { Container, Row, Button } from "reactstrap";
 import { NavLink, Link, useNavigate } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/berleen_Logo.jpeg";
 import { AuthContext } from "../../context/AuthContext";
 import "./header.css";
 

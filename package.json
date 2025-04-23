@@ -1,5 +1,5 @@
 {
-  "name": "toursandtravels",
+  "name": "berleensafaris",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -24,12 +24,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
-    "serve": "react-scripts start",
-    "build": "react-scripts build",
-    "start": "node server.js"
-  },
+  "predeploy": "yarn run build",
+  "deploy": "gh-pages -d build",
+  "serve": "react-scripts start",
+  "build": "react-scripts build",
+  "start": "node server.js",
+  "dev": "nodemon server.js"
+}
+,
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -47,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
