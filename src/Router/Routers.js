@@ -28,10 +28,10 @@ const Router = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/Destinations" element={<Destinations />} />
-      <Route path="/Destinations/kenya" element={<Kenya />} />
+      {/* <Route path="/Destinations/kenya" element={<Kenya />} />
       <Route path="/Destinations/rwanda" element={<Rwanda />} />
       <Route path="/Destinations/tanzania" element={<Tanzania />} />
-      <Route path="/Destinations/uganda" element={<Uganda />} />
+      <Route path="/Destinations/uganda" element={<Uganda />} /> */}
       <Route path="/about" element={<About />} />
       <Route path="/tours" element={<Tours />} />
       <Route path="/tours/:id" element={<TourDetails />} />
