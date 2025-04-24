@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import styles from "../styles/InputDesign.module.css";
 import SearchHeader from "../Components/Dest2/SearchHeader";
-import FilterSidebar from "../Components/Dest2//FilterSidebar";
-import PropertyList from "../Components/Dest2//PropertyList";
+import FilterSidebar from "../Components/Dest2/FilterSidebar";
+import PropertyList from "../Components/Dest2/PropertyList";
 
 function Uganda() {
   const [searchLocation, setSearchLocation] = useState("Mumbai");
