@@ -1,0 +1,112 @@
+.builderC5e760f18ed24a6a818d72e42cfbfa5f:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px #0000001f;
+}
+.builderE135bb59a1724030b89bc941677007b4:hover {
+  background-color: #007fad;
+}
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  padding: 14px 16px 18px;
+  display: flex;
+}
+.a {
+  align-items: center;
+  display: flex;
+}
+.img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  width: 105px;
+  overflow: hidden;
+}
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.h1 {
+  color: #007fad;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 48px;
+  font-family: Arial;
+  font-size: 48px;
+  line-height: 60px;
+}
+.div {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  display: grid;
+}
+@media (width<=991px) {
+  .div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (width<=640px) {
+  .div {
+    grid-template-columns: 1fr;
+  }
+}
+.div2 {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.3s;
+  overflow: hidden;
+  box-shadow: 0 2px 4px #00000014;
+}
+.img2 {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.div3 {
+  padding: 20px;
+}
+.h3 {
+  color: #007fad;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.p {
+  color: #697379;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+.div4 {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.span {
+  color: #697379;
+  font-size: 18px;
+  font-weight: 700;
+}
+.button {
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  user-select: none;
+  background-color: #697379;
+  border: none;
+  border-radius: 2px;
+  padding: 14px 12px;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  transition: background-color 0.2s;
+}

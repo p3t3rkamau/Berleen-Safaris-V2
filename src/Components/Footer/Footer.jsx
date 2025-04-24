@@ -46,8 +46,7 @@ const Footer = () => {
             <div className="logo">
               <img src={logo} alt="" />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                consectetur adipiscing elit.
+              Your gateway to unforgettable African adventures.
               </p>
 
               <div className="social__links d-flex align-items-center gap-4">
@@ -113,12 +112,12 @@ const Footer = () => {
                     to="mailto:support@travelworld.com"
                     className="color-text"
                   >
-                    support@travelworld.com
+                    tours@berleensafaris.com
                   </Link>
                 </p>
               </ListGroupItem>
 
-              <ListGroupItem className="ps-0 border-0 d-flex flex-column flex-md-row align-items-md-center gap-3">
+              {/* <ListGroupItem className="ps-0 border-0 d-flex flex-column flex-md-row align-items-md-center gap-3">
                 <div className="d-flex align-items-center gap-2 ">
                   <span className="text-warning">
                     <i className="ri-phone-fill"></i>
@@ -128,7 +127,7 @@ const Footer = () => {
                 <p className="mb-0">
                   <Link to="tel:9876543210">+91 9876543210</Link>
                 </p>
-              </ListGroupItem>
+              </ListGroupItem> */}
 
               <ListGroupItem className="ps-0 border-0 d-flex flex-column flex-md-row align-items-md-center gap-3">
                 <div className="d-flex align-items-center gap-2">
@@ -137,14 +136,14 @@ const Footer = () => {
                   </span>
                   <h6 className="mb-0">Address:</h6>
                 </div>
-                <p className="mb-0">Pune, Maharashtra, India</p>
+                <p className="mb-0">Nairobi, Kenya</p>
               </ListGroupItem>
             </ListGroup>
           </Col>
 
           <Col lg="12" className="text-center pt-5">
             <p className="copyright">
-              &copy; {year} Travel World. All Rights Reserved.
+              &copy; {year} Berleen Safaris. All Rights Reserved.
               {/* Designed and Developed By{" "}
               <Link to="https://shuence.netlify.app">CodeShuence</Link> */}
             </p>

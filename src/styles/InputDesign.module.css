@@ -1,0 +1,251 @@
+.container {
+    background-color: #fff;
+  }
+  .header {
+    z-index: 10;
+    background-color: #0a223d;
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+  .headerContent {
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+  }
+  .searchInputsContainer {
+    flex: 1;
+    gap: 10px;
+    display: flex;
+  }
+  .searchInput {
+    color: #fff;
+    background-color: #ffffff1a;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+  }
+  .searchButton {
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(96deg, #53b2fe, #065af3);
+    border: none;
+    border-radius: 34px;
+    padding: 12px 24px;
+    font-weight: 700;
+  }
+  .mainContent {
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+  }
+  @media (width<=991px) {
+    .mainContent {
+      flex-direction: column;
+    }
+  }
+  @media (width<=640px) {
+    .mainContent {
+      padding: 10px;
+    }
+  }
+  .sidebar {
+    flex-shrink: 0;
+    width: 260px;
+  }
+  @media (width<=991px) {
+    .sidebar {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  .filterContainer {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 1px 4px #0003;
+  }
+  .filterTitle {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .filterSection {
+    margin-bottom: 20px;
+  }
+  .filterSectionTitle {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .priceRangeInputs {
+    align-items: center;
+    gap: 10px;
+    display: flex;
+  }
+  .priceInput {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100px;
+    padding: 8px;
+  }
+  .propertyTypeSection {
+    margin-bottom: 20px;
+  }
+  .checkboxList {
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+  }
+  .checkboxLabel {
+    cursor: pointer;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+  }
+  .propertiesContainer {
+    flex: 1;
+  }
+  .propertiesHeader {
+    margin-bottom: 20px;
+  }
+  .propertiesTitle {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 900;
+  }
+  .propertyList {
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+  }
+  @media (width<=640px) {
+    .propertyList {
+      gap: 10px;
+    }
+  }
+  .propertyCard {
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    gap: 20px;
+    padding: 16px;
+    display: flex;
+  }
+  .propertyImageContainer {
+    flex-shrink: 0;
+    width: 240px;
+  }
+  @media (width<=991px) {
+    .propertyImageContainer {
+      width: 200px;
+    }
+  }
+  @media (width<=640px) {
+    .propertyImageContainer {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  .propertyMainImage {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+    width: 100%;
+    height: 160px;
+    margin-bottom: 5px;
+    overflow: hidden;
+  }
+  @media (width<=991px) {
+    .propertyMainImage {
+      height: 180px;
+    }
+  }
+  @media (width<=640px) {
+    .propertyMainImage {
+      height: 220px;
+    }
+  }
+  .thumbnailGrid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    display: grid;
+  }
+  .thumbnailImage {
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+  }
+  .propertyInfo {
+    flex: 1;
+  }
+  .propertyHeader {
+    justify-content: space-between;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  .propertyName {
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .propertyRating {
+    color: #fff;
+    background-color: #0b58b4;
+    border-radius: 4px;
+    padding: 3px 5px;
+    font-weight: 900;
+  }
+  .propertyLocation {
+    color: #0084ff;
+    margin-bottom: 10px;
+  }
+  .amenitiesList {
+    gap: 10px;
+    margin-bottom: 10px;
+    display: flex;
+  }
+  .amenityItem {
+    color: #1a7971;
+    align-items: center;
+    gap: 5px;
+    display: flex;
+  }
+  .propertyPriceContainer {
+    border-left: 1px solid #e1e1e1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 200px;
+    padding: 0 16px;
+    display: flex;
+  }
+  .propertyPrice {
+    color: #000;
+    font-size: 22px;
+    font-weight: 900;
+  }
+  .priceSubtext {
+    color: #757575;
+    font-size: 12px;
+  }
+  .viewDetailsButton {
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(96deg, #53b2fe, #065af3);
+    border: none;
+    border-radius: 34px;
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: 700;
+  }
+  

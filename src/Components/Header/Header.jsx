@@ -19,10 +19,20 @@ const nav__links = [
     display: "Tours",
   },
   {
+    path: "/destinations",
+    display: "Destinations",
+    dropdown: [
+      { path: "/destinations/kenya", display: "Kenya" },
+      { path: "/destinations/tanzania", display: "Tanzania" },
+      { path: "/destinations/uganda", display: "Uganda" },
+    ],
+  },
+  {
     path: "/blogs",
-    display: "Blogs"
-  }
+    display: "Blogs",
+  },
 ];
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to keep track of menu open/close
@@ -30,6 +40,16 @@ const Header = () => {
   const menuRef = useRef(null);
   const { user, dispatch } = useContext(AuthContext);
   const navigate = useNavigate();
+  const isMobile = window.innerWidth <= 768;
+
+  const [dropdownOpen, setDropdownOpen] = useState({});
+  const toggleDropdown = (key) => {
+    setDropdownOpen((prev) => ({
+      ...prev,
+      [key]: !prev[key],
+    }));
+  };
+
 
   const logout = () => {
     dispatch({ type: "LOGOUT" });
@@ -71,20 +91,69 @@ const Header = () => {
             {/*Menu start */}
             <div className={`navigation ${isMenuOpen ? "show__menu" : ""}`} ref={menuRef} onClick={toggleMenu}>
               <ul className="menu d-flex align-items-center gap-5">
-                {nav__links.map((item, index) => {
-                  return (
-                    <li className="nav__item" key={index}>
-                      <NavLink
-                        to={item.path}
-                        className={(navClass) =>
-                          navClass.isActive ? "active__link" : ""
-                        }
-                      >
-                        {item.display}
-                      </NavLink>
-                    </li>
-                  );
-                })}
+              {nav__links.map((item, index) => {
+  const hasDropdown = item.dropdown && item.dropdown.length > 0;
+  const isDestinations = item.display === "Destinations";
+
+  return (
+    <li
+      className={`nav__item relative w-full ${
+        hasDropdown && !isMobile ? "group" : ""
+      }`}
+      key={index}
+    >
+      <div
+        className={`flex justify-between items-center w-full cursor-pointer`}
+        onClick={() => {
+          if (hasDropdown && isMobile) toggleDropdown(index);
+        }}
+      >
+        <NavLink
+          to={item.path}
+          className={(navClass) =>
+            navClass.isActive ? "active__link w-full" : "w-full"
+          }
+        >
+          {item.display}
+        </NavLink>
+        {isDestinations && (
+          <i
+            className={`ri-arrow-down-s-line ml-2 transition-transform duration-300 ${
+              dropdownOpen[index] ? "rotate-180" : ""
+            }`}
+          />
+        )}
+      </div>
+
+      {/* Desktop Hover Dropdown */}
+      {hasDropdown && !isMobile && (
+        <ul className="absolute top-full left-0 bg-white rounded shadow-lg w-40 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+          {item.dropdown.map((dropItem, dropIndex) => (
+            <li key={dropIndex} className="px-4 py-2 hover:bg-gray-100">
+              <Link to={dropItem.path}>{dropItem.display}</Link>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {/* Mobile Accordion Dropdown */}
+      {hasDropdown && isMobile && (
+        <ul
+          className={`transition-all duration-300 overflow-hidden bg-gray-50 rounded ${
+            dropdownOpen[index] ? "max-h-96 mt-2" : "max-h-0"
+          }`}
+        >
+          {item.dropdown.map((dropItem, dropIndex) => (
+            <li className="px-4 py-2 hover:bg-gray-100" key={dropIndex}>
+              <Link to={dropItem.path}>{dropItem.display}</Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </li>
+  );
+})}
+
               </ul>
             </div>
 
