@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from "../styles/InputDesign.module.css";
 import SearchHeader from "../Components/Dest2/SearchHeader";
-import FilterSidebar from "../Components/Dest2/FilterSidebar";
+// import FilterSidebar from "../Components/Dest2/FilterSidebar";
 import PropertyList from "../Components/Dest2/PropertyList";
 
 function Tanzania() {
@@ -65,7 +65,7 @@ function Tanzania() {
       />
 
       <div className={styles.mainContent}>
-        <FilterSidebar filters={filters} setFilters={setFilters} />
+        {/* <FilterSidebar filters={filters} setFilters={setFilters} /> */}
 
         <PropertyList
           hotels={hotels}
